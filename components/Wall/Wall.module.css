@@ -1,0 +1,58 @@
+.wall {
+  display: grid;
+  grid-template:
+    "name" auto
+    "description" auto
+    "content" 1fr;
+  gap: 1rem;
+  height: 100%;
+}
+
+.wallName {
+  grid-area: name;
+  text-align: center;
+}
+
+.wallDescription {
+  grid-area: description;
+  text-align: center;
+}
+
+.wallContent {
+  grid-area: content;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto);
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  height: 100%;
+
+  overflow-x: auto;
+}
+
+.wallImage {
+  display: grid;
+  grid-template:
+    "image-name" auto
+    "image-description" auto
+    "image" 50vw / 100vw;
+  gap: 1rem;
+  max-height: 100%;
+}
+
+.imageName {
+  grid-area: image-name;
+  text-align: center;
+}
+
+.imageDescription {
+  grid-area: image-description;
+  text-align: center;
+}
+
+.imageBorder {
+  grid-area: image;
+  height: 100%;
+  width: auto;
+}

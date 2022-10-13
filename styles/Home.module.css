@@ -1,0 +1,24 @@
+.content {
+  display: grid;
+  grid-template:
+    "header" auto
+    "main" 1fr
+    "footer" auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  grid-area: header;
+  padding: 1rem;
+}
+
+.main {
+  grid-area: main;
+  overflow: auto;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 1rem;
+}
